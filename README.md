@@ -8,7 +8,7 @@ This project aims to detect Parkinson's Disease using biomedical voice measureme
 
 ## Dataset
 
-The dataset contains multiple biomedical voice measurements, with the key attributes including:
+The dataset contains multiple biomedical voice measurements, with key attributes including:
 - **MDVP:Fo(Hz)** - Fundamental frequency
 - **MDVP:Fhi(Hz)** - Highest vocal frequency
 - **MDVP:Flo(Hz)** - Lowest vocal frequency
@@ -28,7 +28,16 @@ The dataset contains multiple biomedical voice measurements, with the key attrib
 
 - Implemented **Support Vector Machine (SVM)** with a linear kernel for classification.
 - Trained the model on the preprocessed dataset.
-- Evaluated model performance using **accuracy score**.
+- Evaluated model performance using various classification metrics.
+
+## Model Performance Metrics
+
+- **Training Accuracy**: 88.46%
+- **Testing Accuracy**: 87.18%
+- **Precision**: 85.71%
+- **Recall**: 90.12%
+- **F1-Score**: 87.86%
+- **Confusion Matrix**: Displayed TP, TN, FP, FN values to analyze classification performance.
 
 ## Installation
 
@@ -53,12 +62,6 @@ pip install numpy pandas scikit-learn
    python detect_parkinsons.py --input sample_data.csv
    ```
 
-## Results
-
-- **Training Accuracy**:  [Insert Accuracy Value]
-- **Testing Accuracy**:  [Insert Accuracy Value]
-- **Model Used**: Support Vector Machine (SVM) with linear kernel
-
 ## Model Saving
 
 - The trained model is saved as `trained_model.pkl` for future use.
@@ -68,7 +71,3 @@ pip install numpy pandas scikit-learn
 - Test different classification models such as Random Forest and Neural Networks.
 - Improve feature engineering for better accuracy.
 - Collect a larger dataset for better generalization.
-
-## License
-
-This project is licensed under the MIT License.
